@@ -80,10 +80,23 @@ function decreaseBox(event) {}
 Додайте слухач кліку на window і визначте чи клікнув користувач у дів з id="place".
 */
 
-// const placeRef = document.querySelector("#place");
-// addEventListener("click", (e) => {
-//   console.log(e.target === placeRef ? true : false);
-// });
+const placeEl = document.querySelector("#place");
+
+placeEl.addEventListener("click", placeElClick);
+
+function placeElClick(event) {
+  console.log(event.target === placeEl ? true : false);
+}
+
+// =============================
+
+// function placeElClick(event) {
+//   if (event.target) {
+//     console.log("Huraaa");
+//   } else {
+//     console.log("Oooops");
+//   }
+// }
 
 //TODO:==============================================
 /*
@@ -91,6 +104,15 @@ function decreaseBox(event) {}
 Натиснувши кнопку "Подвоювати", збільшити значення
 у кожному елементі списку у 2 рази
 */
+
+const doubleBtnRef = document.querySelector("#double");
+const arrItemsRefs = document.querySelectorAll(".listItem");
+
+doubleBtnRef.addEventListener("click", () => {
+  arrItemsRefs.forEach(
+    (item) => (item.textContent = BigInt(item.textContent) ** 2n)
+  );
+});
 
 //TODO:==============================================
 /*
