@@ -124,6 +124,33 @@ https://developer.mozilla.org/ru/docs/Web/API/MouseEvent/pageX
 https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageY
 */
 
+const circle = document.querySelector(".outerCircle");
+let x = 0;
+let y = 0;
+circle.addEventListener("mousemove", (event) => {});
+
+// const onMouseMove = (e) => {
+//   console.log("move");
+
+//   let left = e.pageX;
+//   let top = e.pageY;
+
+//   circle.style.top = `${top - 15}px`;
+//   circle.style.left = `${left - 15}px`;
+// };
+
+// circle.addEventListener("click", (e) => {
+//   const item = e.currentTarget;
+//   if (item.style.position === "absolute") {
+//     window.removeEventListener("mousemove", onMouseMove);
+//     item.style.position = "static";
+//     return;
+//   }
+
+//   item.style.position = "absolute";
+//   window.addEventListener("mousemove", onMouseMove);
+// });
+
 // ===================================================
 // ===================================================
 
