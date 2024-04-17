@@ -72,7 +72,8 @@ const decreaseBtn = document.querySelector("#decrease");
 const increaseBtn = document.querySelector("#increase");
 
 decreaseBtn.addEventListener("click", decreaseBox);
-function decreaseBox(event) {}
+
+}
 
 //TODO:==============================================
 /*
@@ -80,39 +81,12 @@ function decreaseBox(event) {}
 Додайте слухач кліку на window і визначте чи клікнув користувач у дів з id="place".
 */
 
-const placeEl = document.querySelector("#place");
-
-placeEl.addEventListener("click", placeElClick);
-
-function placeElClick(event) {
-  console.log(event.target === placeEl ? true : false);
-}
-
-// =============================
-
-// function placeElClick(event) {
-//   if (event.target) {
-//     console.log("Huraaa");
-//   } else {
-//     console.log("Oooops");
-//   }
-// }
-
 //TODO:==============================================
 /*
 Завдання 6
 Натиснувши кнопку "Подвоювати", збільшити значення
 у кожному елементі списку у 2 рази
 */
-
-const doubleBtnRef = document.querySelector("#double");
-const arrItemsRefs = document.querySelectorAll(".listItem");
-
-doubleBtnRef.addEventListener("click", () => {
-  arrItemsRefs.forEach(
-    (item) => (item.textContent = BigInt(item.textContent) ** 2n)
-  );
-});
 
 //TODO:==============================================
 /*
@@ -123,11 +97,6 @@ https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/MouseEvent
 https://developer.mozilla.org/ru/docs/Web/API/MouseEvent/pageX
 https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageY
 */
-
-const circle = document.querySelector(".outerCircle");
-let x = 0;
-let y = 0;
-circle.addEventListener("mousemove", (event) => {});
 
 // const onMouseMove = (e) => {
 //   console.log("move");
@@ -160,6 +129,16 @@ circle.addEventListener("mousemove", (event) => {});
 При натисканні на кнопку "Вивести результат" виводиться сума значень, а также статистика с
 информацией о том, какая кнопка была нажата сколько раз.
 */
+// const statList = document.querySelector(".statList");
+// const calcButtonEl = document.querySelector(".calcButton");
+// const resultButton = document.querySelector("#resultButton");
+
+// statList.addEventListener("click", btnValue);
+// resultButton.addEventListener("click", resultsValue);
+
+// function btnValue(event) {
+//   const value = event.target.dataset.number;
+// }
 
 /*
 Задача 9
